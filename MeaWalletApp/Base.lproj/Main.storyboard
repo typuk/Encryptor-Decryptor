@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mea Wallet View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MeaWalletViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="084-vu-sIw">
+                                <rect key="frame" x="72" y="100" width="247" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="SNK-bH-pBc">
+                                <rect key="frame" x="113.5" y="220" width="148" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-eA-kLX">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="30"/>
+                                        <state key="normal" title="Encrypt"/>
+                                        <connections>
+                                            <action selector="onButtonEncrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vnN-Pi-klf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxN-eX-VJ5">
+                                        <rect key="frame" x="93" y="0.0" width="55" height="30"/>
+                                        <state key="normal" title="Decrypt"/>
+                                        <connections>
+                                            <action selector="onButtonDecrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Rh-nz-ia2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EX1-yY-r7e">
+                                <rect key="frame" x="16" y="105" width="36" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo9-MO-O2o">
+                                <rect key="frame" x="16" y="155" width="48" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qUT-wb-wm8">
+                                <rect key="frame" x="72" y="150" width="247" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="084-vu-sIw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="07u-jC-SA0"/>
+                            <constraint firstItem="SNK-bH-pBc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0m1-yf-ouP"/>
+                            <constraint firstItem="084-vu-sIw" firstAttribute="leading" secondItem="EX1-yY-r7e" secondAttribute="trailing" constant="20" id="0q8-h8-eJ8"/>
+                            <constraint firstItem="EX1-yY-r7e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7e9-3A-v4o"/>
+                            <constraint firstItem="qUT-wb-wm8" firstAttribute="centerY" secondItem="Vo9-MO-O2o" secondAttribute="centerY" id="7yk-9G-PoX"/>
+                            <constraint firstItem="Vo9-MO-O2o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="C16-yZ-WMR"/>
+                            <constraint firstItem="qUT-wb-wm8" firstAttribute="leading" secondItem="084-vu-sIw" secondAttribute="leading" id="G1g-BW-jC0"/>
+                            <constraint firstItem="084-vu-sIw" firstAttribute="centerY" secondItem="EX1-yY-r7e" secondAttribute="centerY" id="axq-08-S1C"/>
+                            <constraint firstItem="SNK-bH-pBc" firstAttribute="top" secondItem="qUT-wb-wm8" secondAttribute="bottom" constant="40" id="eX1-cE-cJk"/>
+                            <constraint firstItem="qUT-wb-wm8" firstAttribute="trailing" secondItem="084-vu-sIw" secondAttribute="trailing" id="nLV-b6-hcA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="084-vu-sIw" secondAttribute="trailing" constant="40" id="qMm-7t-dgD"/>
+                            <constraint firstItem="qUT-wb-wm8" firstAttribute="top" secondItem="084-vu-sIw" secondAttribute="bottom" constant="20" id="quO-Hk-hTn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataTextField" destination="084-vu-sIw" id="5aF-ha-BRF"/>
+                        <outlet property="resultTextField" destination="qUT-wb-wm8" id="N02-te-uVr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
