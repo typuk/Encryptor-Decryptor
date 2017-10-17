@@ -1,0 +1,6 @@
+framework module MeaWallet {
+  umbrella header "MeaWallet.h"
+
+  export *
+  module * { export * }
+}

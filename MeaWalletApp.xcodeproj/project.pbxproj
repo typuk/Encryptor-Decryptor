@@ -13,24 +13,8 @@
 		8776181B1EF4113D00F7AD38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8776181A1EF4113D00F7AD38 /* Assets.xcassets */; };
 		8776181E1EF4113D00F7AD38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8776181C1EF4113D00F7AD38 /* LaunchScreen.storyboard */; };
 		877618351EF413CC00F7AD38 /* MeaWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877618341EF413CC00F7AD38 /* MeaWalletViewController.m */; };
+		878525AF1F961610004D7BE2 /* MeaWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878525AE1F961610004D7BE2 /* MeaWallet.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		8764402C1F8B6B5900FD7A9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 876440271F8B6B5900FD7A9D /* MeaWallet.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 877EA2271EF3B35A00C65A99;
-			remoteInfo = MeaWallet;
-		};
-		8764402E1F8B6B5900FD7A9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 876440271F8B6B5900FD7A9D /* MeaWallet.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 877EA2301EF3B35A00C65A99;
-			remoteInfo = MeaWalletTests;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		877618321EF4115900F7AD38 /* Embed Frameworks */ = {
@@ -46,7 +30,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		876440271F8B6B5900FD7A9D /* MeaWallet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MeaWallet.xcodeproj; sourceTree = "<group>"; };
 		8776180B1EF4113D00F7AD38 /* MeaWalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeaWalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8776180F1EF4113D00F7AD38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		877618111EF4113D00F7AD38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,6 +40,7 @@
 		8776181F1EF4113D00F7AD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		877618331EF413CC00F7AD38 /* MeaWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeaWalletViewController.h; sourceTree = "<group>"; };
 		877618341EF413CC00F7AD38 /* MeaWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeaWalletViewController.m; sourceTree = "<group>"; };
+		878525AE1F961610004D7BE2 /* MeaWallet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MeaWallet.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,25 +48,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				878525AF1F961610004D7BE2 /* MeaWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		876440281F8B6B5900FD7A9D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8764402D1F8B6B5900FD7A9D /* MeaWallet.framework */,
-				8764402F1F8B6B5900FD7A9D /* MeaWalletTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		877618021EF4113D00F7AD38 = {
 			isa = PBXGroup;
 			children = (
-				876440271F8B6B5900FD7A9D /* MeaWallet.xcodeproj */,
+				878525AE1F961610004D7BE2 /* MeaWallet.framework */,
 				8776180D1EF4113D00F7AD38 /* MeaWalletApp */,
 				8776180C1EF4113D00F7AD38 /* Products */,
 			);
@@ -167,35 +143,12 @@
 			mainGroup = 877618021EF4113D00F7AD38;
 			productRefGroup = 8776180C1EF4113D00F7AD38 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 876440281F8B6B5900FD7A9D /* Products */;
-					ProjectRef = 876440271F8B6B5900FD7A9D /* MeaWallet.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8776180A1EF4113D00F7AD38 /* MeaWalletApp */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		8764402D1F8B6B5900FD7A9D /* MeaWallet.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MeaWallet.framework;
-			remoteRef = 8764402C1F8B6B5900FD7A9D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8764402F1F8B6B5900FD7A9D /* MeaWalletTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MeaWalletTests.xctest;
-			remoteRef = 8764402E1F8B6B5900FD7A9D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		877618091EF4113D00F7AD38 /* Resources */ = {
@@ -351,6 +304,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MeaWalletApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MeaWalletApp;
@@ -362,6 +319,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MeaWalletApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MeaWalletApp;

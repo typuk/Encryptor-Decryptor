@@ -23,20 +23,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "877EA2261EF3B35A00C65A99"
-               BuildableName = "MeaWallet.framework"
-               BlueprintName = "MeaWallet"
-               ReferencedContainer = "container:MeaWallet.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "8776180A1EF4113D00F7AD38"
                BuildableName = "MeaWalletApp.app"
                BlueprintName = "MeaWalletApp"
