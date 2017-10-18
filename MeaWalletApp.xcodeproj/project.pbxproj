@@ -13,7 +13,9 @@
 		8776181B1EF4113D00F7AD38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8776181A1EF4113D00F7AD38 /* Assets.xcassets */; };
 		8776181E1EF4113D00F7AD38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8776181C1EF4113D00F7AD38 /* LaunchScreen.storyboard */; };
 		877618351EF413CC00F7AD38 /* MeaWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 877618341EF413CC00F7AD38 /* MeaWalletViewController.m */; };
-		878525AF1F961610004D7BE2 /* MeaWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878525AE1F961610004D7BE2 /* MeaWallet.framework */; };
+		87D518191F97AF8200C4F478 /* MeaWalletDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D518141F97AF8200C4F478 /* MeaWalletDecryptor.m */; };
+		87D5181A1F97AF8200C4F478 /* MeaWalletEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D518161F97AF8200C4F478 /* MeaWalletEncryptor.m */; };
+		87D5181B1F97AF8200C4F478 /* NSString+MeaWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D518181F97AF8200C4F478 /* NSString+MeaWallet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,7 +42,12 @@
 		8776181F1EF4113D00F7AD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		877618331EF413CC00F7AD38 /* MeaWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeaWalletViewController.h; sourceTree = "<group>"; };
 		877618341EF413CC00F7AD38 /* MeaWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeaWalletViewController.m; sourceTree = "<group>"; };
-		878525AE1F961610004D7BE2 /* MeaWallet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MeaWallet.framework; sourceTree = "<group>"; };
+		87D518131F97AF8200C4F478 /* MeaWalletDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeaWalletDecryptor.h; sourceTree = "<group>"; };
+		87D518141F97AF8200C4F478 /* MeaWalletDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeaWalletDecryptor.m; sourceTree = "<group>"; };
+		87D518151F97AF8200C4F478 /* MeaWalletEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeaWalletEncryptor.h; sourceTree = "<group>"; };
+		87D518161F97AF8200C4F478 /* MeaWalletEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeaWalletEncryptor.m; sourceTree = "<group>"; };
+		87D518171F97AF8200C4F478 /* NSString+MeaWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MeaWallet.h"; sourceTree = "<group>"; };
+		87D518181F97AF8200C4F478 /* NSString+MeaWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MeaWallet.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878525AF1F961610004D7BE2 /* MeaWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +64,6 @@
 		877618021EF4113D00F7AD38 = {
 			isa = PBXGroup;
 			children = (
-				878525AE1F961610004D7BE2 /* MeaWallet.framework */,
 				8776180D1EF4113D00F7AD38 /* MeaWalletApp */,
 				8776180C1EF4113D00F7AD38 /* Products */,
 			);
@@ -75,6 +80,12 @@
 		8776180D1EF4113D00F7AD38 /* MeaWalletApp */ = {
 			isa = PBXGroup;
 			children = (
+				87D518131F97AF8200C4F478 /* MeaWalletDecryptor.h */,
+				87D518141F97AF8200C4F478 /* MeaWalletDecryptor.m */,
+				87D518151F97AF8200C4F478 /* MeaWalletEncryptor.h */,
+				87D518161F97AF8200C4F478 /* MeaWalletEncryptor.m */,
+				87D518171F97AF8200C4F478 /* NSString+MeaWallet.h */,
+				87D518181F97AF8200C4F478 /* NSString+MeaWallet.m */,
 				877618111EF4113D00F7AD38 /* AppDelegate.h */,
 				877618121EF4113D00F7AD38 /* AppDelegate.m */,
 				877618331EF413CC00F7AD38 /* MeaWalletViewController.h */,
@@ -168,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87D5181A1F97AF8200C4F478 /* MeaWalletEncryptor.m in Sources */,
 				877618131EF4113D00F7AD38 /* AppDelegate.m in Sources */,
 				877618101EF4113D00F7AD38 /* main.m in Sources */,
 				877618351EF413CC00F7AD38 /* MeaWalletViewController.m in Sources */,
+				87D5181B1F97AF8200C4F478 /* NSString+MeaWallet.m in Sources */,
+				87D518191F97AF8200C4F478 /* MeaWalletDecryptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

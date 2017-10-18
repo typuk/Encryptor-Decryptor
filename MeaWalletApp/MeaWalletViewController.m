@@ -7,7 +7,8 @@
 //
 
 #import "MeaWalletViewController.h"
-#import <MeaWallet/MeaWallet.h>
+#import "MeaWalletDecryptor.h"
+#import "MeaWalletEncryptor.h"
 
 @interface MeaWalletViewController ()
 
